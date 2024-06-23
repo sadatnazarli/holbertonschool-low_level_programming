@@ -1,21 +1,41 @@
 #include "main.h"
+#include <stdio.h>
 /**
- * print_alphabet_x10 - function or entry point
- * Return: Void
+ * print_to_98 - function or entry point
+ * @n: number that will be printed
+ * Return: always 0
  **/
-void print_alphabet_x10(void)
+void print_to_98(int n)
 {
-	char letter;
-	int i;
-
-	for (i = 0; i < 10; i++)
+	if (n <= 98)
 	{
-		letter = 'a';
-		while (letter <= 'z')
+		for (; n <= 98; n++)
 		{
-			_putchar(letter);
-				letter++;
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
 		}
-		_putchar('\n');
+	} else
+	{
+		for (; n >= 98; n--)
+		{
+			if (n == 98)
+			{
+				printf("%d", n);
+				printf("\n");
+				break;
+			}
+			else
+			{
+				printf("%d, ", n);
+			}
+		}
 	}
 }
