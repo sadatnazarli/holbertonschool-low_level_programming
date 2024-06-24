@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
+ * _isdigit - function or entry point
+ * @c: character that will be checked
+ * Return: 1 or 0 entry point
+ **/
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
@@ -15,3 +15,5 @@ int _isdigit(int c)
 		return (0);
 	}
 }
+
+
