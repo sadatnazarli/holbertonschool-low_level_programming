@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return always 0
- */
+ * print_numbers - function or entry point
+ * Return: expected result
+ **/
+
 void print_numbers(void)
 {
 	int num;
