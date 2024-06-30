@@ -1,21 +1,25 @@
 #include "main.h"
-#include <stdio.h>
 /**
-* print_chessboard - a function that prints the chessboard
-* @a: array of elements
+* puts_half - print the half of the string
+* @str: string
 **/
-void print_chessboard(char (*a)[8])
+void puts_half(char *str)
 {
-	int i, j;
+	int index, start_index, odd_case, i;
 
-	for (i = 0; i < 8; i++)
+	for (index = 0; str[index] != 0; index++)
 	{
-		for (j = 0; j < 8; j++)
-		{
-			printf("%c", a[i][j]);
-		}
-
-		printf("\n");
+	;
 	}
+	start_index = index / 2;
+	if (index % 2 == 1)
+	{
+	odd_case = 1;
+	start_index = index / 2 + odd_case;
+	}
+	for (i = start_index; i < index; i++)
+	{
+	_putchar(str[i]);
+	}
+	_putchar('\n');
 }
-
