@@ -6,14 +6,13 @@
  * @src: source memory area
  * @n: bytes
  **/
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest, const char *src, unsigned int n)
 {
-	char *ptr1 = dest;
-	char *ptr2 = src;
+	unsigned int i;
 
-	while (n--)
+	for (i = 0; i < n; i++)
 	{
-		*ptr1++ = *ptr2++;
+		dest[i] = src[i];
 	}
 	return (dest);
 }
